@@ -34,7 +34,7 @@ function findFirstAttacker() {
         for (const c of player.hand) {
             if (c.suit === state.trumpSuit && c.rank < bestRank) {
                 bestRank = c.rank;
-                best = 1;
+                best = i;
             }
         }
     });
